@@ -11,28 +11,45 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header-container">
-        <div class="navbar">
-            <div class="logo">
-                <p>FIUs</p>
+  <!-- header -->
+  <header class="container-fluid bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" style="color: white;" href="#">FIUs</a>
+            <!-- Botón de colapso para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./compras.html">Comprar Entradas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login_comunidad.html">Ingresa</a>
+                    </li>
+                </ul>
             </div>
-            <!-- MENU -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./compras.html">Comprar Entradas</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./login_comunidad.html">Ingresa</a></li>
-            </ul>
-            <!-- fin de menu -->
         </div>
-    </header>
-    <!-- fin de header -->
+    </nav>
+</header>
+  
+  
+  <!-- fin de header -->
     <!-- MAIN -->
     <main>
-        <div class="card mb-3"
-            style="max-width: 1290px; background-color: rgb(98, 99, 99); text-align: right; padding: 5px;">
+        <div class="card mb-3" style="margin-top: 30px; max-width: 1290px; background-color: rgb(98, 99, 99); text-align: right; padding: 5px;">
             <!-- SUBMENU de eventos disponibles para comprar -->
             <div class="lista_compras">
                 <ul class="compras">
@@ -57,6 +74,7 @@
                 <!-- fin de submenu -->
             </div>
             <section>
+                <!-- Tarjetas de eventos -->
                 <div>
                     <!-- Tarjeta de informacion de evento -->
                     <div class="card mb-3" style="max-width: 1290px; text-align: justify;">
@@ -244,12 +262,22 @@
     </main>
     <!-- Fin del MAIN -->
     <!-- Inicio del FOOTER -->
-    <section class="footer">
-        <div class="footer-container">
-            <p>© 2024 FIUs S.A. | Todos los derechos reservados. | Calle Falsa 123, C.A.B.A., Argentina | Teléfono:
-                +1234567890 | Email: info@fius.com</p>
+    <footer class="bg-dark text-light py-4 w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+              <p class="mb-0">© 2024 FIUs S.A. | Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <p class="mb-0">Calle Falsa 123, C.A.B.A., Argentina</p>
+            </div>
+            <div class="col-md-4 text-center text-md-right">
+              <p class="mb-0">Teléfono: <a href="tel:+1234567890" class="text-light">+1234567890</a> | 
+              Email: <a href="mailto:info@fius.com" class="text-light">info@fius.com</a></p>
+            </div>
+          </div>
         </div>
-    </section>
+      </footer>
     <!-- fin del FOOTER -->
     <!-- Bootstrap JS / siempre se coloca al final del body-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
