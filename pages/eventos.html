@@ -33,9 +33,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./eventos.html">Eventos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./compras.html">Comprar Entradas</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./novedades.html">Novedades</a>
                         </li>
@@ -232,21 +230,71 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="../Assets/images/borisb.webp" class="img-fluid rounded-start"
+                                    alt="Mind Against">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">Inmersión sonora con Mind Against</h5>
+                                        <p class="card-text">Con su música, te llevará a un viaje a través de paisajes
+                                            sonoros que te dejarán sin aliento. No te pierdas la oportunidad!</p>
+                                    </div>
+                                    <div class="mt-auto p-3">
+                                        <button type="button" class="btn btn-outline-primary w-100"
+                                            onclick="window.location.href='./comprar_mind.html'">Comprar
+                                            Tickets!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="../Assets/images/wade.webp" class="img-fluid rounded-start"
+                                    alt="Mind Against">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">Inmersión sonora con Mind Against</h5>
+                                        <p class="card-text">Con su música, te llevará a un viaje a través de paisajes
+                                            sonoros que te dejarán sin aliento. No te pierdas la oportunidad!</p>
+                                    </div>
+                                    <div class="mt-auto p-3">
+                                        <button type="button" class="btn btn-outline-primary w-100"
+                                            onclick="window.location.href='./comprar_mind.html'">Comprar
+                                            Tickets!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Fin de caja de eventos -->
 
         <!-- MAPA -->
-        <div class="container my-5">
-            <div class="card text-bg-dark">
-                <img src="../Assets/images/mapapng.webp" class="card-img" alt="Mapa de eventos">
-                <div class="card-img-overlay d-flex flex-column justify-content-center">
-                    <h4 class="card-title text-dark">Radar de Eventos</h4>
-                    <p class="card-text text-dark">Descubre los eventos más copados cerca de tu ubicación</p>
+        <div class="container mapa-container">
+            <div class="card text-bg-dark" style="max-width: 1296px">
+                <img src="https://maps.geoapify.com/v1/staticmap?style=dark-matter-purple-roads&width=1293&height=300&center=lonlat:-58.39872675812708,-34.5651888&zoom=14&marker=lonlat:-58.39872675812708,-34.5651888;type:awesome;color:%23e01401&apiKey=b8568cb9afc64fad861a69edbddb2658"
+                    class="card-img img-fluid" alt="Mapa Radar de Novedades">
+                <div class="card-img-overlay">
+                    <h4 class="card-title" style="color: #fff">Radar de Eventos</h5>
+                        <p class="card-text" style="color: #fff">Descubri los eventos mas copados cerca de tu
+                            ubicación</p>
+
                 </div>
             </div>
-        </div>
-        <!-- Fin de MAPA -->
+            <!-- FIN MAPA -->
 
     </main>
     <!-- Inicio del FOOTER -->

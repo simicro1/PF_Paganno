@@ -135,12 +135,12 @@ main{
 }
 
 
-.contenedor_comunidad {
+.container_comunidad {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px
+    height: 100%;
+
 }
 .columna_comunidad {
     flex: 1;
@@ -151,6 +151,11 @@ main{
 .login {
     margin-top: 10px;
     margin-left: 0%;
+}
+
+.img-login {
+    height: 500px;
+    object-fit: contain;
 }
 
 

@@ -30,9 +30,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./eventos.html">Eventos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./compras.html">Comprar Entradas</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="./novedades.html">Novedades</a>
                     </li>
@@ -49,31 +47,7 @@
   <!-- fin de header -->
     <!-- MAIN -->
     <main>
-
-        <div class="card mb-3"
-            style="max-width: 1290px; background-color: rgb(98, 99, 99); text-align: right; padding: 5px;">
-        <div class="lista_compras">
-            <ul class="compras">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false" style="color: rgb(255, 255, 255);"><b>Eventos Disponibles</b></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./comprar_mmonique.html">Miss Monique</a></li>
-                        <li><a class="dropdown-item" href="./comprar_purple.html">Purple Disco Machine</a></li>
-                        <li><a class="dropdown-item" href="./comprar_prydz.html">Eric Prydz</a></li>
-                        <li><a class="dropdown-item" href="./comprar_claptone.html">Claptone</a></li>
-                        <li><a class="dropdown-item" href="./comprar_gioli.html">Gioli & Assia</a></li>
-                        <li><a class="dropdown-item" href="./comprar_mind.html">Mind Against</a></li>
-                        <li><a class="dropdown-item" href="./comprar_wade.html">Wade</a></li>
-                        <li><a class="dropdown-item" href="./comprar_boris.html">Boris Brejcha</a></li>
-                    </ul>
-                </li>
-            </ul>
-            </nav>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            </div>
-        </div>
-            <section>
+            <section class="container-compras">
                 <div>
                     <div class="card mb-3" style="max-width: 1290px; text-align: justify;">
                         <div class="row g-0">
@@ -239,7 +213,8 @@
                                     <div>
                                         <div class="d-flex justify-content-center align-items-center" style="padding: 30px;">
                                             <p></p>
-                                            <button type="button" class="btn btn-outline-primary">COMPRAR ENTRADAS</button>
+                                            <button type="button" class="btn btn-outline-primary"
+                                            onclick="window.location.href='./carrito.html'">COMPRAR ENTRADAS</button>
                                         </div>
                                     </div>
                                 </div>
