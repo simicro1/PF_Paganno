@@ -26,6 +26,7 @@ main {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #333;
     color: white;
@@ -36,10 +37,6 @@ main {
     z-index: 1000;
 }
 
-/* .navbar .logo {
-    font-size: 1.5em;
-    color: #75f463;
-} */
 
 .navbar ul {
     list-style: none;
@@ -68,7 +65,28 @@ main {
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="currentColor" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E'); /* Cambia la imagen del ícono si es necesario */
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E'); /* Cambia la imagen del ícono si es necesario */
+    
+}
+
+.contenedor_carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    height: 100%; 
+}
+
+.contenedor_novedades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    height: 100%; 
 }
 
 main{
@@ -86,6 +104,16 @@ main{
 
 .tarjetas .card {
     max-width: 100%;
+}
+
+.container-compras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    height: 100%;
 }
 
 .mapa-container {
