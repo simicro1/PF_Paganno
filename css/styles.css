@@ -69,6 +69,62 @@ main {
     
 }
 
+.c-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.c-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.c-carousel-item {
+    min-width: 100%;
+}
+
+.c-carousel-item img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .prev, .next {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prev, .next {
+        padding: 3px;
+    }
+}
+
 .contenedor_carrito{
     display: flex;
     justify-content: center;
@@ -158,8 +214,81 @@ main{
     object-fit: contain;
 }
 
+.news-title{
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;}
 
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
 
+.news-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
+.news-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.news-item h2 {
+    margin: 15px;
+    font-size: 20px;
+}
 
+.news-item p {
+    margin: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .news-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex: 1 1 calc(100% - 40px);
+    }
+
+    .news-item h2 {
+        font-size: 18px;
+    }
+
+    .news-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-item h2 {
+        font-size: 16px;
+    }
+
+    .news-item p {
+        font-size: 13px;
+    }
+
+}
