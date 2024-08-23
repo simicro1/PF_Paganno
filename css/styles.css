@@ -1,4 +1,4 @@
-*  {
+* {
     margin: 0;
     padding: 0;
 }
@@ -61,12 +61,14 @@ main {
 }
 
 .navbar-brand {
-    color: #000; /* Cambia el color del logo si es necesario */
+    color: #000;
+    /* Cambia el color del logo si es necesario */
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E'); /* Cambia la imagen del ícono si es necesario */
-    
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+    /* Cambia la imagen del ícono si es necesario */
+
 }
 
 .c-carousel {
@@ -92,7 +94,8 @@ main {
     border-radius: 10px;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -114,38 +117,42 @@ main {
 
 /* Media Queries para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
-    .prev, .next {
+
+    .prev,
+    .next {
         padding: 5px;
     }
 }
 
 @media (max-width: 480px) {
-    .prev, .next {
+
+    .prev,
+    .next {
         padding: 3px;
     }
 }
 
-.contenedor_carrito{
+.contenedor_carrito {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
     align-content: center;
-    height: 100%; 
+    height: 100%;
 }
 
-.contenedor_novedades{
+.contenedor_novedades {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
     align-content: center;
-    height: 100%; 
+    height: 100%;
 }
 
-main{
+main {
     margin-top: 60px;
 
 }
@@ -153,16 +160,19 @@ main{
 .tarjetas {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambiado a flex-start para que las tarjetas se alineen en la parte superior */
-    gap: 1rem; /* Espacio entre las tarjetas */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas si es necesario */
+    align-items: flex-start;
+    /* Cambiado a flex-start para que las tarjetas se alineen en la parte superior */
+    gap: 1rem;
+    /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se envuelvan en múltiples líneas si es necesario */
 }
 
 .tarjetas .card {
     max-width: 100%;
 }
 
-.container-compras{
+.container-compras {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,11 +187,13 @@ main{
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .footer {
-    background-color: #343a40; /* Color del fondo del footer */
-    color: #f8f9fa; /* Color del texto del footer */
+.footer {
+    background-color: #343a40;
+    /* Color del fondo del footer */
+    color: #f8f9fa;
+    /* Color del texto del footer */
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -198,10 +210,11 @@ main{
     height: 100%;
 
 }
+
 .columna_comunidad {
     flex: 1;
     padding: 10px;
-    
+
 }
 
 .login {
@@ -214,12 +227,21 @@ main{
     object-fit: contain;
 }
 
-.news-title{
+.news-title {
     display: flex;
     font-weight: bold;
     text-align: left;
-    margin-top: 15px;
-    margin-bottom: 10px;}
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.index-title{
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    
+}
 
 .news-container {
     display: flex;
@@ -261,6 +283,32 @@ main{
     transform: translateY(-5px);
 }
 
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating input:checked~label,
+.rating input:checked~label~label {
+    color: #ffcc00;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: #ffcc00;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .news-item {
@@ -290,5 +338,4 @@ main{
     .news-item p {
         font-size: 13px;
     }
-
 }
