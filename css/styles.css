@@ -94,8 +94,7 @@ main {
     border-radius: 10px;
 }
 
-.prev,
-.next {
+.prev,.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
