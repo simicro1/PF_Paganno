@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+.footer {
+    background-color: $background-color-footer;
+    color: $text-color-light;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: $padding-large;
+    text-align: center;
+  }

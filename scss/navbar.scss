@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-small $padding-medium;
+    z-index: 1000;
+  
+    ul {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-left: $padding-small;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          padding: $padding-small;
+          @include hover-transition($secondary-color);
+        }
+      }
+    }
+  }
+  
+  .navbar-brand {
+    color: $text-color-dark;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+  }
+  

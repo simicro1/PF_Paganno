@@ -1,0 +1,7 @@
+// Mixin para hover
+@mixin hover-transition($color-hover) {
+    transition: background-color $transition-duration;
+    &:hover {
+      background-color: $color-hover;
+    }
+  }

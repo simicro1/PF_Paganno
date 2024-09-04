@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+.c-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: $padding-medium auto;
+    overflow: hidden;
+    border-radius: $border-radius;
+  
+    .c-carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  
+      .c-carousel-item {
+        min-width: 100%;
+  
+        img {
+          width: 100%;
+          vertical-align: middle;
+          border-radius: $border-radius;
+        }
+      }
+    }
+  
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: $padding-small;
+      cursor: pointer;
+      border-radius: 50%;
+  
+      &.prev {
+        left: $padding-small;
+      }
+  
+      &.next {
+        right: $padding-small;
+      }
+  
+      @media (max-width: 768px) {
+        padding: 5px;
+      }
+  
+      @media (max-width: 480px) {
+        padding: 3px;
+      }
+    }
+  }
+  
